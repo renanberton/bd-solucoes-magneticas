@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto - MagneticTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navegação -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-icon">
+                        <i class="fas fa-magnet"></i>
+                    </div>
+                    <h1>Magnetic<span>Tech</span></h1>
+                </a>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="produto-detalhado.html" class="active">Produto em Destaque</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Área de carregamento -->
+    <div id="loading" class="loading">
+        <div class="loading-spinner">
+            <i class="fas fa-magnet fa-spin"></i>
+            <p>Carregando informações do produto...</p>
+        </div>
+    </div>
+
+    <!-- Conteúdo do Produto (será preenchido dinamicamente) -->
+    <section class="produto-detalhado" id="produtoConteudo" style="display: none;">
+        <div class="container">
+            <div class="produto-caminho" id="produtoCaminho">
+                <a href="index.html">Home</a> / <a href="produtos.html">Produtos</a> / <span id="categoriaAtual">Carregando...</span> / <span id="produtoNome">Produto</span>
+            </div>
+            
+            <div class="produto-detalhado-conteudo">
+                <!-- Galeria do Produto -->
+                <div class="produto-galeria">
+                    <div class="produto-imagem-principal">
+                        <div class="produto-badge-detalhe" id="produtoBadge"></div>
+                        <div class="produto-visual" id="produtoIconePrincipal">
+                            <i class="fas fa-magnet"></i>
+                        </div>
+                    </div>
+                    <div class="produto-miniaturas" id="produtoMiniaturas">
+                        <!-- Miniaturas serão geradas dinamicamente -->
+                    </div>
+                </div>
+                
+                <!-- Informações do Produto -->
+                <div class="produto-informacoes">
+                    <h1 id="produtoTitulo">Carregando...</h1>
+                    <div class="produto-categoria-detalhe">
+                        <span class="categoria" id="produtoCategoria">Categoria</span>
+                        <span class="estoque" id="produtoEstoque"><i class="fas fa-check-circle"></i> Em estoque</span>
+                    </div>
+                    
+                    <div class="produto-avaliacao">
+                        <div class="estrelas" id="produtoAvaliacao">
+                            <!-- Estrelas serão geradas dinamicamente -->
+                        </div>
+                    </div>
+                    
+                    <p class="produto-descricao-detalhe" id="produtoDescricao">
+                        Carregando descrição do produto...
+                    </p>
+                    
+                    <div class="produto-preco-detalhe">
+                        <div class="preco-atual-detalhe" id="produtoPreco">R$ 0,00</div>
+                        <div class="preco-unidade-detalhe" id="produtoUnidade">por unidade</div>
+                        <div class="preco-desconto" id="produtoDesconto"></div>
+                    </div>
+                    
+                    <div class="produto-especificacoes-detalhe">
+                        <h3>Especificações Técnicas</h3>
+                        <div class="especificacoes-grid" id="produtoEspecificacoes">
+                            <!-- Especificações serão geradas dinamicamente -->
+                        </div>
+                    </div>
+                    
+                    <div class="produto-opcoes">
+                        <div class="quantidade">
+                            <label for="quantidade">Quantidade:</label>
+                            <div class="quantidade-controle">
+                                <button class="quantidade-btn" id="diminuir">-</button>
+                                <input type="number" id="quantidade" value="1" min="1" max="100">
+                                <button class="quantidade-btn" id="aumentar">+</button>
+                            </div>
+                        </div>
+                        
+                        <div class="produto-botoes">
+                            <button class="btn btn-primary btn-comprar">
+                                <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                            </button>
+                            <button class="btn btn-secondary" id="btnOrcamento">
+                                <i class="fas fa-file-alt"></i> Solicitar Orçamento
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="produto-garantia">
+                        <i class="fas fa-shield-alt"></i>
+                        <span id="produtoGarantia">Garantia de 2 anos contra defeitos de fabricação</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Abas de Detalhes -->
+            <div class="produto-abas">
+                <div class="abas-navegacao">
+                    <button class="aba-link active" data-aba="descricao">Descrição Detalhada</button>
+                    <button class="aba-link" data-aba="especificacoes">Especificações Técnicas</button>
+                    <button class="aba-link" data-aba="aplicacoes">Aplicações</button>
+                    <button class="aba-link" data-aba="seguranca">Segurança</button>
+                </div>
+                
+                <div class="abas-conteudo">
+                    <div class="aba-conteudo active" id="descricao">
+                        <!-- Conteúdo será carregado dinamicamente -->
+                    </div>
+                    
+                    <div class="aba-conteudo" id="especificacoes">
+                        <!-- Conteúdo será carregado dinamicamente -->
+                    </div>
+                    
+                    <div class="aba-conteudo" id="aplicacoes">
+                        <!-- Conteúdo será carregado dinamicamente -->
+                    </div>
+                    
+                    <div class="aba-conteudo" id="seguranca">
+                        <!-- Conteúdo será carregado dinamicamente -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Produtos Relacionados -->
+            <div class="produtos-relacionados">
+                <h2 class="section-title">Produtos Relacionados</h2>
+                <div class="relacionados-grid" id="produtosRelacionados">
+                    <!-- Produtos relacionados serão carregados dinamicamente -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-magnet"></i>
+                        </div>
+                        <h2>Magnetic<span>Tech</span></h2>
+                    </div>
+                    <p>Soluções em equipamentos magnéticos e imãs para indústria, medicina e tecnologia.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Produtos</h3>
+                    <ul>
+                        <li><a href="produtos.html">Imãs Permanentes</a></li>
+                        <li><a href="produtos.html">Separadores Magnéticos</a></li>
+                        <li><a href="produtos.html">Eletroímãs</a></li>
+                        <li><a href="produtos.html">Equipamentos Customizados</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="produto-detalhado.html">Produto em Destaque</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Industrial, 1234 - São Paulo, SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 3456-7890</li>
+                        <li><i class="fas fa-envelope"></i> contato@magnetictech.com.br</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MagneticTech - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="produto-detalhado-dinamico.js"></script>
+</body>
+</html>

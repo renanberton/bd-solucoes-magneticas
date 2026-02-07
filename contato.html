@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - MagneticTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navegação -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-icon">
+                        <i class="fas fa-magnet"></i>
+                    </div>
+                    <h1>Magnetic<span>Tech</span></h1>
+                </a>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="produto-detalhado.html">Produto em Destaque</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner da Página -->
+    <section class="page-banner">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Estamos prontos para atender suas necessidades em soluções magnéticas</p>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contato">
+        <div class="container">
+            <div class="contato-conteudo">
+                <!-- Informações de Contato -->
+                <div class="contato-informacoes">
+                    <h2>Fale Conosco</h2>
+                    <p>Tem alguma dúvida sobre nossos produtos? Precisa de um orçamento personalizado? Entre em contato conosco, nossa equipe está pronta para ajudá-lo.</p>
+                    
+                    <div class="contato-detalhes">
+                        <div class="contato-item">
+                            <div class="contato-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contato-texto">
+                                <h4>Endereço</h4>
+                                <p>Av. Industrial, 1234<br>Jardim das Indústrias<br>São Paulo - SP<br>CEP: 04583-000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contato-item">
+                            <div class="contato-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contato-texto">
+                                <h4>Telefones</h4>
+                                <p>Comercial: (11) 3456-7890<br>WhatsApp: (11) 98765-4321<br>Suporte Técnico: (11) 3456-7891</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contato-item">
+                            <div class="contato-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contato-texto">
+                                <h4>E-mails</h4>
+                                <p>Comercial: contato@magnetictech.com.br<br>Técnico: suporte@magnetictech.com.br<br>Orçamentos: orcamento@magnetictech.com.br</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contato-item">
+                            <div class="contato-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contato-texto">
+                                <h4>Horário de Funcionamento</h4>
+                                <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h<br>Domingo: Fechado</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contato-redes">
+                        <h4>Siga-nos nas Redes Sociais</h4>
+                        <div class="redes-sociais">
+                            <a href="#" class="rede-social">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="rede-social">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="rede-social">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="rede-social">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulário de Contato -->
+                <div class="contato-formulario">
+                    <h2>Envie uma Mensagem</h2>
+                    <p>Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+                    
+                    <form id="formContato">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" name="empresa">
+                        </div>
+                        
+                        <div class="form-group-dupla">
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone *</label>
+                                <input type="tel" id="telefone" name="telefone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="assunto">Assunto *</label>
+                            <select id="assunto" name="assunto" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="orcamento">Solicitar Orçamento</option>
+                                <option value="informacao">Informação sobre Produtos</option>
+                                <option value="suporte">Suporte Técnico</option>
+                                <option value="reclamacao">Reclamação</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Desejo receber novidades e ofertas por e-mail</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-enviar">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa de Localização -->
+    <section class="localizacao">
+        <div class="container">
+            <h2 class="section-title">Nossa Localização</h2>
+            <div class="mapa-container">
+                <!-- Mapa Simulado -->
+                <div class="mapa-simulado">
+                    <div class="mapa">
+                        <div class="ruas">
+                            <div class="rua horizontal"></div>
+                            <div class="rua vertical"></div>
+                            <div class="local-magnetic">
+                                <i class="fas fa-magnet"></i>
+                                <div class="local-pin">
+                                    <div class="pin-cabeca"></div>
+                                    <div class="pin-haste"></div>
+                                </div>
+                                <span>MagneticTech</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mapa-legenda">
+                        <p><strong>Como chegar:</strong> Siga pela Av. Industrial até o número 1234, próximo ao Parque Industrial. Estamos no prédio azul com logotipo magnético na fachada.</p>
+                        <div class="mapa-info">
+                            <div class="info-item">
+                                <i class="fas fa-subway"></i>
+                                <span>Metrô mais próximo: Estação Industrial (Linha Azul)</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-bus"></i>
+                                <span>Ônibus: Linhas 1234, 5678, 9101</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-car"></i>
+                                <span>Estacionamento: Disponível no local</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perguntas Frequentes -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-lista">
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h3>Qual o prazo de entrega dos produtos?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>O prazo de entrega varia conforme o produto e localidade. Para produtos em estoque, o prazo é de 3 a 7 dias úteis para a grande São Paulo e 7 a 15 dias para outras regiões. Produtos sob encomenda têm prazo acordado no momento do pedido.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h3>Vocês fazem equipamentos magnéticos personalizados?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Sim, temos uma equipe de engenharia especializada em desenvolver soluções magnéticas personalizadas para necessidades específicas. Entre em contato conosco para discutir seu projeto.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h3>Os imãs perdem força com o tempo?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Imãs permanentes de alta qualidade como os que comercializamos têm perda mínima ao longo do tempo (menos de 1% por década em condições normais de uso). Imãs de Neodímio mantêm suas propriedades por décadas se não forem expostos a temperaturas acima de sua especificação.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h3>Vocês oferecem suporte técnico?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Sim, temos uma equipe de suporte técnico especializada que pode auxiliar na seleção do produto adequado, instalação e solução de problemas. O suporte está disponível por telefone, e-mail e, quando necessário, com visitas técnicas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-magnet"></i>
+                        </div>
+                        <h2>Magnetic<span>Tech</span></h2>
+                    </div>
+                    <p>Soluções em equipamentos magnéticos e imãs para indústria, medicina e tecnologia.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Produtos</h3>
+                    <ul>
+                        <li><a href="produtos.html">Imãs Permanentes</a></li>
+                        <li><a href="produtos.html">Separadores Magnéticos</a></li>
+                        <li><a href="produtos.html">Eletroímãs</a></li>
+                        <li><a href="produtos.html">Equipamentos Customizados</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="produto-detalhado.html">Produto em Destaque</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Industrial, 1234 - São Paulo, SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 3456-7890</li>
+                        <li><i class="fas fa-envelope"></i> contato@magnetictech.com.br</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MagneticTech - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contato-script.js"></script>
+</body>
+</html>

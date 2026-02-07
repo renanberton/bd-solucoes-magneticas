@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - MagneticTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navegação -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-icon">
+                        <i class="fas fa-magnet"></i>
+                    </div>
+                    <h1>Magnetic<span>Tech</span></h1>
+                </a>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html" class="active">Produtos</a></li>
+                    <li><a href="produto-detalhado.html">Produto em Destaque</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner da Página -->
+    <section class="page-banner">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <p>Soluções magnéticas para diversas aplicações industriais</p>
+        </div>
+    </section>
+
+    <!-- Filtros de Produtos -->
+    <section class="filtros-produtos">
+        <div class="container">
+            <div class="filtros-container">
+                <h3>Filtrar por Categoria:</h3>
+                <div class="filtros-botoes">
+                    <button class="filtro-btn active" data-filter="todos">Todos</button>
+                    <button class="filtro-btn" data-filter="permanentes">Imãs Permanentes</button>
+                    <button class="filtro-btn" data-filter="separadores">Separadores Magnéticos</button>
+                    <button class="filtro-btn" data-filter="eletroimas">Eletroímãs</button>
+                    <button class="filtro-btn" data-filter="acessorios">Acessórios</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grade de Produtos -->
+    <section class="produtos-lista">
+        <div class="container">
+            <div class="produtos-grid produtos-container">
+                <!-- Produto 1 -->
+                <div class="produto-item" data-category="permanentes">
+                    <div class="produto-card-lista">
+                        <div class="produto-imagem">
+                            <span class="produto-badge">Mais Vendido</span>
+                            <div class="produto-categoria-lista">Imãs Permanentes</div>
+                            <div class="produto-icon">
+                                <i class="fas fa-magnet"></i>
+                            </div>
+                        </div>
+                        <div class="produto-conteudo">
+                            <h3>Imãs de Neodímio N52</h3>
+                            <p class="produto-descricao">Imãs de terras raras com altíssima potência magnética. Ideais para aplicações que exigem força magnética máxima em espaços reduzidos.</p>
+                            <div class="produto-especificacoes">
+                                <div class="especificacao">
+                                    <i class="fas fa-ruler"></i>
+                                    <span>Força: 14.800 Gauss</span>
+                                </div>
+                                <div class="especificacao">
+                                    <i class="fas fa-thermometer-half"></i>
+                                    <span>Temperatura: 80°C máx.</span>
+                                </div>
+                            </div>
+                            <div class="produto-footer">
+                                <div class="produto-preco">
+                                    <span class="preco-atual">R$ 45,90</span>
+                                    <span class="preco-unidade">unidade</span>
+                                </div>
+                                <a href="produto-detalhado.html?id=1&categoria=permanentes" class="btn btn-primary">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="produto-item" data-category="separadores">
+                    <div class="produto-card-lista">
+                        <div class="produto-imagem">
+                            <div class="produto-categoria-lista">Separadores Magnéticos</div>
+                            <div class="produto-icon">
+                                <i class="fas fa-filter"></i>
+                            </div>
+                        </div>
+                        <div class="produto-conteudo">
+                            <h3>Separador Overband Automático</h3>
+                            <p class="produto-descricao">Separador magnético overband para instalação sobre correias transportadoras. Ideal para separação de materiais ferrosos.</p>
+                            <div class="produto-especificacoes">
+                                <div class="especificacao">
+                                    <i class="fas fa-weight"></i>
+                                    <span>Capacidade: 15 ton/h</span>
+                                </div>
+                                <div class="especificacao">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Alimentação: 220V</span>
+                                </div>
+                            </div>
+                            <div class="produto-footer">
+                                <div class="produto-preco">
+                                    <span class="preco-atual">R$ 12.500,00</span>
+                                </div>
+                                <a href="produto-detalhado.html?id=2&categoria=separadores" class="btn btn-primary">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="produto-item" data-category="eletroimas">
+                    <div class="produto-card-lista">
+                        <div class="produto-imagem">
+                            <div class="produto-categoria-lista">Eletroímãs</div>
+                            <div class="produto-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                        <div class="produto-conteudo">
+                            <h3>Eletroímã de Levantamento</h3>
+                            <p class="produto-descricao">Eletroímã industrial para levantamento de chapas, blocos e sucata ferrosa. Controle preciso de força magnética.</p>
+                            <div class="produto-especificacoes">
+                                <div class="especificacao">
+                                    <i class="fas fa-weight-hanging"></i>
+                                    <span>Carga: 1.500 kg</span>
+                                </div>
+                                <div class="especificacao">
+                                    <i class="fas fa-plug"></i>
+                                    <span>Potência: 5 kW</span>
+                                </div>
+                            </div>
+                            <div class="produto-footer">
+                                <div class="produto-preco">
+                                    <span class="preco-atual">R$ 8.900,00</span>
+                                </div>
+                                <a href="produto-detalhado.html?id=3&categoria=eletroimas" class="btn btn-primary">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="produto-item" data-category="permanentes">
+                    <div class="produto-card-lista">
+                        <div class="produto-imagem">
+                            <div class="produto-categoria-lista">Imãs Permanentes</div>
+                            <div class="produto-icon">
+                                <i class="fas fa-dot-circle"></i>
+                            </div>
+                        </div>
+                        <div class="produto-conteudo">
+                            <h3>Imãs de Ferrite</h3>
+                            <p class="produto-descricao">Imãs cerâmicos de baixo custo com excelente resistência à desmagnetização e corrosão. Amplamente utilizados em motores e alto-falantes.</p>
+                            <div class="produto-especificacoes">
+                                <div class="especificacao">
+                                    <i class="fas fa-tint"></i>
+                                    <span>Resistente à corrosão</span>
+                                </div>
+                                <div class="especificacao">
+                                    <i class="fas fa-temperature-high"></i>
+                                    <span>Até 250°C</span>
+                                </div>
+                            </div>
+                            <div class="produto-footer">
+                                <div class="produto-preco">
+                                    <span class="preco-atual">R$ 12,50</span>
+                                    <span class="preco-unidade">unidade</span>
+                                </div>
+                                <a href="produto-detalhado.html?id=4&categoria=permanentes" class="btn btn-primary">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 5 -->
+                <div class="produto-item" data-category="separadores">
+                    <div class="produto-card-lista">
+                        <div class="produto-imagem">
+                            <div class="produto-categoria-lista">Separadores Magnéticos</div>
+                            <div class="produto-icon">
+                                <i class="fas fa-drum"></i>
+                            </div>
+                        </div>
+                        <div class="produto-conteudo">
+                            <h3>Separador de Tambor</h3>
+                            <p class="produto-descricao">Separador magnético de tambor para processamento a seco ou úmido. Eficiente na remoção de contaminantes ferrosos.</p>
+                            <div class="produto-especificacoes">
+                                <div class="especificacao">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>Rotação: 45 rpm</span>
+                                </div>
+                                <div class="especificacao">
+                                    <i class="fas fa-ruler-combined"></i>
+                                    <span>Diâmetro: 600 mm</span>
+                                </div>
+                            </div>
+                            <div class="produto-footer">
+                                <div class="produto-preco">
+                                    <span class="preco-atual">R$ 22.300,00</span>
+                                </div>
+                                <a href="produto-detalhado.html?id=5&categoria=separadores" class="btn btn-primary">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 6 -->
+                <div class="produto-item" data-category="acessorios">
+                    <div class="produto-card-lista">
+                        <div class="produto-imagem">
+                            <span class="produto-badge">Novidade</span>
+                            <div class="produto-categoria-lista">Acessórios</div>
+                            <div class="produto-icon">
+                                <i class="fas fa-vial"></i>
+                            </div>
+                        </div>
+                        <div class="produto-conteudo">
+                            <h3>Medidor de Campo Gauss</h3>
+                            <p class="produto-descricao">Medidor portátil de campo magnético com display digital. Precisão de ±2% para medição de fluxo magnético.</p>
+                            <div class="produto-especificacoes">
+                                <div class="especificacao">
+                                    <i class="fas fa-broadcast-tower"></i>
+                                    <span>Faixa: 0-30k Gauss</span>
+                                </div>
+                                <div class="especificacao">
+                                    <i class="fas fa-battery-full"></i>
+                                    <span>Bateria: 9V</span>
+                                </div>
+                            </div>
+                            <div class="produto-footer">
+                                <div class="produto-preco">
+                                    <span class="preco-atual">R$ 890,00</span>
+                                </div>
+                                <a href="produto-detalhado.html?id=6&categoria=acessorios" class="btn btn-primary">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Aplicações Industriais -->
+    <section class="aplicacoes-industriais">
+        <div class="container">
+            <h2 class="section-title">Aplicações Industriais</h2>
+            <div class="aplicacoes-lista">
+                <div class="aplicacao-card">
+                    <div class="aplicacao-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Reciclagem</h3>
+                    <p>Separação de metais em processos de reciclagem de resíduos.</p>
+                </div>
+                <div class="aplicacao-card">
+                    <div class="aplicacao-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Agroindústria</h3>
+                    <p>Proteção de equipamentos e separação de impurezas em grãos.</p>
+                </div>
+                <div class="aplicacao-card">
+                    <div class="aplicacao-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Farmacêutica</h3>
+                    <p>Controle de pureza e separação de contaminantes em pós.</p>
+                </div>
+                <div class="aplicacao-card">
+                    <div class="aplicacao-icon">
+                        <i class="fas fa-oil-can"></i>
+                    </div>
+                    <h3>Plásticos</h3>
+                    <p>Proteção de extrusoras e removação de partículas metálicas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-magnet"></i>
+                        </div>
+                        <h2>Magnetic<span>Tech</span></h2>
+                    </div>
+                    <p>Soluções em equipamentos magnéticos e imãs para indústria, medicina e tecnologia.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Produtos</h3>
+                    <ul>
+                        <li><a href="produtos.html">Imãs Permanentes</a></li>
+                        <li><a href="produtos.html">Separadores Magnéticos</a></li>
+                        <li><a href="produtos.html">Eletroímãs</a></li>
+                        <li><a href="produtos.html">Equipamentos Customizados</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="produto-detalhado.html">Produto em Destaque</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Industrial, 1234 - São Paulo, SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 3456-7890</li>
+                        <li><i class="fas fa-envelope"></i> contato@magnetictech.com.br</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MagneticTech - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="produtos-script.js"></script>
+</body>
+</html>
