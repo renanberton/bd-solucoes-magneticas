@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header/Navegação -->
     <header class="header">
         <div class="container">
             <div class="logo">
@@ -20,23 +19,18 @@
                     <h1>Magnetic<span>Tech</span></h1>
                 </a>
             </div>
-            
             <button class="menu-toggle" id="menuToggle">
                 <i class="fas fa-bars"></i>
             </button>
-            
             <nav class="nav-menu" id="navMenu">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="produto-detalhado.html">Produto em Destaque</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -45,21 +39,6 @@
                 <div class="hero-buttons">
                     <a href="produtos.html" class="btn btn-primary">Ver Produtos</a>
                     <a href="contato.html" class="btn btn-secondary">Solicitar Orçamento</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="magnet-animation">
-                    <div class="magnet magnet-1">
-                        <div class="magnet-core"></div>
-                        <div class="magnet-pole north"></div>
-                        <div class="magnet-pole south"></div>
-                    </div>
-                    <div class="magnet magnet-2">
-                        <div class="magnet-core"></div>
-                        <div class="magnet-pole north"></div>
-                        <div class="magnet-pole south"></div>
-                    </div>
-                    <div class="field-lines"></div>
                 </div>
             </div>
         </div>
@@ -103,10 +82,12 @@
     </section>
 
     <!-- Seção de Produtos em Destaque -->
+    <!-- Seção de Produtos em Destaque - CORRIGIDA -->
     <section class="produtos-destaque">
         <div class="container">
             <h2 class="section-title">Produtos em Destaque</h2>
             <div class="produtos-grid">
+                <!-- Produto 1 - Imãs de Neodímio -->
                 <div class="produto-card">
                     <div class="produto-image">
                         <div class="produto-categoria">Imãs Permanentes</div>
@@ -115,9 +96,13 @@
                     <div class="produto-info">
                         <h3>Imãs de Neodímio</h3>
                         <p>Imãs permanentes de alta potência para aplicações industriais exigentes.</p>
-                        <a href="produto-detalhado.html" class="produto-link">Ver detalhes <i class="fas fa-arrow-right"></i></a>
+                        <a href="produto-detalhado.html?id=1&categoria=permanentes" class="produto-link"> 
+                            Ver detalhes <i class="fas fa-arrow-right"></i> 
+                        </a>
                     </div>
                 </div>
+                
+                <!-- Produto 2 - Separadores Overband -->
                 <div class="produto-card">
                     <div class="produto-image">
                         <div class="produto-categoria">Separadores Magnéticos</div>
@@ -126,9 +111,13 @@
                     <div class="produto-info">
                         <h3>Separadores Overband</h3>
                         <p>Equipamentos para separação de metais em esteiras transportadoras.</p>
-                        <a href="produtos.html" class="produto-link">Ver detalhes <i class="fas fa-arrow-right"></i></a>
+                        <a href="produto-detalhado.html?id=2&categoria=separadores" class="produto-link"> 
+                            Ver detalhes <i class="fas fa-arrow-right"></i> 
+                        </a>
                     </div>
                 </div>
+                
+                <!-- Produto 3 - Eletroímãs Industriais -->
                 <div class="produto-card">
                     <div class="produto-image">
                         <div class="produto-categoria">Eletroímãs</div>
@@ -137,7 +126,10 @@
                     <div class="produto-info">
                         <h3>Eletroímãs Industriais</h3>
                         <p>Soluções magnéticas controladas eletricamente para manuseio de materiais.</p>
-                        <a href="produtos.html" class="produto-link">Ver detalhes <i class="fas fa-arrow-right"></i></a>
+                        <!-- CORREÇÃO AQUI: mudar id=1 para id=3 -->
+                        <a href="produto-detalhado.html?id=3&categoria=eletroimas" class="produto-link"> 
+                            Ver detalhes <i class="fas fa-arrow-right"></i> 
+                        </a>
                     </div>
                 </div>
             </div>
@@ -161,7 +153,7 @@
                 </div>
                 <div class="aplicacao-item">
                     <div class="aplicacao-icon">
-                        <i class="fas fa-mining"></i>
+                        <i class="fas fa-fire"></i>
                     </div>
                     <h3>Mineração</h3>
                     <p>Separação magnética em processos de mineração.</p>
@@ -204,20 +196,10 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h3>Produtos</h3>
-                    <ul>
-                        <li><a href="produtos.html">Imãs Permanentes</a></li>
-                        <li><a href="produtos.html">Separadores Magnéticos</a></li>
-                        <li><a href="produtos.html">Eletroímãs</a></li>
-                        <li><a href="produtos.html">Equipamentos Customizados</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
                     <h3>Links Rápidos</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="produtos.html">Produtos</a></li>
-                        <li><a href="produto-detalhado.html">Produto em Destaque</a></li>
                         <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </div>

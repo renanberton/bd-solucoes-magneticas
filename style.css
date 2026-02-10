@@ -214,8 +214,10 @@ h1, h2, h3, h4 {
 .hero .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
 }
 
 .hero-content {
@@ -238,15 +240,10 @@ h1, h2, h3, h4 {
 
 .hero-buttons {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
     flex-wrap: wrap;
-}
-
-.hero-image {
-    flex: 1;
-    min-width: 300px;
-    position: relative;
-    height: 400px;
 }
 
 .magnet-animation {
@@ -1749,7 +1746,7 @@ h1, h2, h3, h4 {
    RESPONSIVIDADE PARA TELAS PEQUENAS (< 420px)
    ====================== */
 
-@media (max-width: 420px) {
+@media (max-width: 425px) {
     /* Ajustes gerais */
     .container {
         padding: 0 12px;
@@ -1799,11 +1796,6 @@ h1, h2, h3, h4 {
     .hero-buttons .btn {
         width: 100%;
         text-align: center;
-    }
-    
-    .hero-image {
-        height: 250px;
-        margin-top: 30px;
     }
     
     /* Seção Diferenciais */
@@ -1859,6 +1851,30 @@ h1, h2, h3, h4 {
         font-size: 0.85rem;
         text-align: center;
         width: 100%;
+    }
+
+    .contato-item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contato-redes {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .redes-sociais {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato-informacoes {
+        text-align: center;
     }
     
     /* Página de produtos */
@@ -2122,11 +2138,6 @@ CORREÇÕES ESPECÍFICAS PARA iOS
 ====================== */
 @supports (-webkit-touch-callout: none) {
     /* Correções específicas para Safari iOS */
-    .hero-image {
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-    }
-    
     input, textarea {
         font-size: 16px; /* Previne zoom automático no iOS */
     }

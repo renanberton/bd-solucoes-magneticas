@@ -29,7 +29,6 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="produto-detalhado.html" class="active">Produto em Destaque</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
@@ -48,7 +47,7 @@
     <section class="produto-detalhado" id="produtoConteudo" style="display: none;">
         <div class="container">
             <div class="produto-caminho" id="produtoCaminho">
-                <a href="index.html">Home</a> / <a href="produtos.html">Produtos</a> / <span id="categoriaAtual">Carregando...</span> / <span id="produtoNome">Produto</span>
+                <a href="index.html">Home</a> / <a href="produtos.html">Produtos</a> / <span id="categoriaAtual">Carregando Produto...</span> / <span id="produtoNome">Produto</span>
             </div>
             
             <div class="produto-detalhado-conteudo">
@@ -107,11 +106,8 @@
                         </div>
                         
                         <div class="produto-botoes">
-                            <button class="btn btn-primary btn-comprar">
-                                <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
-                            </button>
-                            <button class="btn btn-secondary" id="btnOrcamento">
-                                <i class="fas fa-file-alt"></i> Solicitar Orçamento
+                            <button class="btn btn-secondary btn-orcamento-whatsapp">
+                                <i class="fab fa-whatsapp"></i> Pedir Orçamento
                             </button>
                         </div>
                     </div>
@@ -158,6 +154,12 @@
                     <!-- Produtos relacionados serão carregados dinamicamente -->
                 </div>
             </div>
+
+            <div class="text-center" style="margin-top: 40px; padding-top: 40px; border-top: 1px solid #eee;">
+                <a href="produtos.html" class="btn btn-outline">
+                    <i class="fas fa-arrow-left"></i> Voltar para Todos os Produtos
+                </a>
+            </div>
         </div>
     </section>
 
@@ -194,7 +196,6 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="produtos.html">Produtos</a></li>
-                        <li><a href="produto-detalhado.html">Produto em Destaque</a></li>
                         <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </div>
