@@ -736,7 +736,7 @@ function carregarProduto(produtoId) {
 document.addEventListener('DOMContentLoaded', function() {
     // Obter ID do produto da URL
     const params = getUrlParams();
-    const produtoId = params.id || 1; // Padrão para produto 1 se não especificado
+    const produtoId = params.id;
     
     // Se não houver ID na URL, verificar se estamos na página "Produto em Destaque"
     // e carregar um produto aleatório ou específico
